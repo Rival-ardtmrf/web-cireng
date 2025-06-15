@@ -1,0 +1,61 @@
+/* 
+  Menu Page CSS for DeliciousEats
+  Author: Bolt
+  Version: 1.0
+*/
+
+/* Menu Categories Navigation */
+.menu-categories {
+    padding: var(--spacing-6) 0;
+  }
+  
+  .category-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-5);
+    flex-wrap: wrap;
+  }
+  
+  .category-btn {
+    background-color: var(--neutral-100);
+    border: 1px solid var(--neutral-300);
+    color: var(--neutral-700);
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+  }
+  
+  .category-btn:hover,
+  .category-btn.active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--neutral-100);
+  }
+  
+  /* Menu Category Sections */
+  .menu-category {
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .menu-category:last-child {
+    margin-bottom: 0;
+  }
+  
+  .category-title {
+    position: relative;
+    padding-bottom: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .category-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+  }

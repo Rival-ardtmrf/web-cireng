@@ -1,0 +1,220 @@
+/* 
+  Responsive CSS for DeliciousEats
+  Author: Bolt
+  Version: 1.0
+*/
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 992px) {
+    /* Typography */
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+    }
+    
+    /* Header */
+    .order-btn {
+      display: none;
+    }
+    
+    /* Hero */
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .hero-buttons {
+      justify-content: center;
+    }
+    
+    /* Features */
+    .feature-box {
+      min-width: 200px;
+    }
+    
+    /* Menu Grid */
+    .menu-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    
+    /* Testimonials */
+    .testimonial-item {
+      min-width: 250px;
+    }
+    
+    /* Footer */
+    .footer-content {
+      gap: var(--spacing-4);
+    }
+  }
+  
+  /* Small screens (mobile) */
+  @media screen and (max-width: 768px) {
+    /* Typography */
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+    }
+    
+    /* Header and Navigation */
+    .nav {
+      display: none;
+    }
+    
+    .mobile-menu-btn {
+      display: flex;
+    }
+    
+    /* Hero */
+    .hero {
+      padding-top: calc(70px + var(--spacing-3));
+    }
+    
+    .hero-content h1 {
+      margin-bottom: var(--spacing-2);
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+      margin-bottom: var(--spacing-3);
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      gap: var(--spacing-2);
+    }
+    
+    .hero-buttons .btn {
+      width: 100%;
+    }
+    
+    /* Sections */
+    .features,
+    .featured-menu,
+    .testimonials,
+    .cta,
+    .about-story,
+    .about-mission,
+    .about-team,
+    .about-values,
+    .contact-info,
+    .contact-form-section,
+    .faq-section {
+      padding: var(--spacing-5) 0;
+    }
+    
+    /* Features */
+    .features .container {
+      flex-direction: column;
+    }
+    
+    /* Menu */
+    .menu-grid {
+      gap: var(--spacing-3);
+    }
+    
+    /* Testimonials */
+    .testimonial-slider {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .testimonial-item {
+      max-width: 100%;
+    }
+    
+    /* Footer */
+    .footer-content {
+      flex-direction: column;
+      gap: var(--spacing-4);
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .social-icons {
+      margin-top: var(--spacing-2);
+      justify-content: center;
+    }
+    
+    /* About Page */
+    .about-content {
+      flex-direction: column;
+    }
+    
+    .about-content.reverse {
+      flex-direction: column-reverse;
+    }
+    
+    .about-image,
+    .about-text {
+      width: 100%;
+    }
+    
+    /* Contact Page */
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .contact-content {
+      flex-direction: column;
+    }
+    
+    .contact-form-container,
+    .contact-map {
+      width: 100%;
+    }
+  }
+  
+  /* Extra small screens */
+  @media screen and (max-width: 480px) {
+    /* Container */
+    .container {
+      padding: 0 var(--spacing-1);
+    }
+    
+    /* Header */
+    .header-container {
+      padding: var(--spacing-1) var(--spacing-2);
+    }
+    
+    .logo a {
+      font-size: 1.5rem;
+    }
+    
+    /* Menu */
+    .menu-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    /* CTA */
+    .cta-content h2 {
+      font-size: 1.5rem;
+    }
+    
+    .cta-content p {
+      font-size: 1rem;
+    }
+    
+    /* Menu Categories */
+    .category-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .category-btn {
+      margin-bottom: var(--spacing-1);
+    }
+  }
